@@ -1,7 +1,3 @@
-if __name__ == "main":
-    
+from controller.controller import Controller
 
-
-
-
-
+controller = Controller()
