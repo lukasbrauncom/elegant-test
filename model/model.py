@@ -17,7 +17,7 @@ class Player:
 
 	def getColor(self):
 		return self.color
-		
+
 	def storeData(self):
 		pickle.dump(self, open( "save.p", "wb" ) )
 
@@ -25,4 +25,3 @@ class Player:
 		loaded = pickle.load(open( "save.p", "rb" ) )
 		self.__dict__ = loaded.__dict__
 
-m = Player()
