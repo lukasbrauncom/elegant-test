@@ -18,16 +18,10 @@ class Player:
 	def getColor(self):
 		return self.color
 
-	def setPreferences(self, loaded):
-		self.name = loaded.name
-		self.color = loaded.color
-
-
 	def storeData(self):
 		pickle.dump(self, open( "save.p", "wb" ) )
 
 	def readData(self):
 		loaded = pickle.load(open( "save.p", "rb" ) )
-		self.setPreferences(loaded)
+		self.__dict__ = loaded.__dict__
 
-m = Player()
