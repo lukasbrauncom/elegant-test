@@ -1,5 +1,5 @@
-
+from model.model import Player
 
 class Controller:
     def __init__(self):
-        pass
+        self.player = Player()
