@@ -1,3 +1,3 @@
-from controller.controller import Controller
+from elegant.controller import Controller
 
 controller = Controller()

@@ -1,6 +1,6 @@
 import sys
-from model.model import Player
-from view.view import View
+from elegant.model import Player
+from elegant.view import View
 
 class Controller:
     def __init__(self):
